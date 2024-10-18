@@ -1,47 +1,9 @@
-/**
- * @file
- * Import all settings.
- */
-/**
-*********************
-* Colors
-********************
-**/
-/** Add any additional color supplied in the style guide **/
-/* Primary Colors */
-/* Secondary Colors */
-/* Text colors */
-/* Grayscale colors */
-/** Button & Link colors **/
-/**
- * @file
- * Import all settings.
- */
-/**
-*********************
-* Variables
-********************
-**/
-/* Typography */
-/* Transitions */
-/* Container & spacings */
-/** Button spacing **/
-/* Border */
-/* Breakpoints */
-/**
- * @file
- * Import all settings.
- */
-/**
- * @file
- * Mixins
- */
 .body-text h1,
 .body-text h2,
 .body-text h3,
 .body-text h4,
-.body-text h5 {
-  margin: 2rem 0;
-  color: #002B31;
-  font-weight: 600;
+.body-text h5{
+  margin:2rem 0;
+  color:#002B31;
+  font-weight:600;
 }
