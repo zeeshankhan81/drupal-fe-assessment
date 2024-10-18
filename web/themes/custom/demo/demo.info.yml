@@ -1,0 +1,7 @@
+name: Demo theme
+type: theme
+base theme: stable9
+core_version_requirement: ^8 || ^9 || ^10
+version: VERSION
+libraries:
+  - demo_theme/base

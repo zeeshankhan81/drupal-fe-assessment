@@ -1,0 +1,10 @@
+{% set classes = [
+  'body-text',
+  extra_classes,
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+	{% if body_text %}
+		{{ body_text|raw }}
+	{% endif %}
+</div>

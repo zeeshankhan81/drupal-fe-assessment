@@ -1,0 +1,17 @@
+base:
+  version: VERSION
+  css:
+    component:
+      css/layout/layout.css: {  }
+
+# SplideJS
+splidejs:
+  css:
+    component:
+      node_modules/@splidejs/splide/dist/css/splide.min.css: {}
+  js:
+    node_modules/@splidejs/splide/dist/js/splide.min.js: {}
+    src/js/splide.slider.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

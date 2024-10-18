@@ -1,0 +1,13 @@
+{% block paragraph %}
+    {% embed "demo:speakers-item" with {
+      title: paragraph.field_name ? paragraph.field_name.value : '',
+      photo: content.field_photo,
+      designation: paragraph.field_designation ? paragraph.field_designation.value : '',
+      organization: paragraph.field_organization ? paragraph.field_organization.value : '',
+      }
+	  %}
+				{% block content %}
+						{{ content.field_bio }}
+				{% endblock %}
+				{% endembed %}
+{% endblock paragraph %}

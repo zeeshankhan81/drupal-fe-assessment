@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Base styles for layout builder.
+ */
+@use "../settings" as *;
+
+.layout-container {
+  max-width: 1326px;
+  margin: 0 auto;
+}
+
+.content-lg {
+  width: 100%;
+  max-width: 1326px;
+  margin: 0 auto;
+}

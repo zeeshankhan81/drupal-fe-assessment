@@ -1,0 +1,41 @@
+@use "../../src/scss/settings" as *;
+.speakers {
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 275.5px !important;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 4px 10px 24px 0 $color--shadow;
+        padding-inline: $space--sm;
+        padding-block: $space--sl;
+    }
+    &__photo {
+        img {
+            border-radius: 50%;
+        }
+    }
+    &__name {
+        margin: 0;
+        font-size: $font-size--xl;
+        font-weight: $font-weight--extra-bold;
+    }
+    &__designation {
+        font-size: $font-size--l;
+        font-weight: $font-weight--bold;
+    }
+    &__organization {
+        margin-block-start: $space--ms;
+        color: $color--gray;
+        font-size: $font-size;
+        font-weight: $font-weight;
+    }
+    &__name, &__designation {
+        margin-block-start: $space--sm;
+    }
+    &__bio {
+        display: none;
+    }
+}

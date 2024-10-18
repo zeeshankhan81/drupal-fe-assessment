@@ -1,0 +1,16 @@
+<div class="speakers__card splide__slide">
+  <div class="speakers__photo">{{ photo }}</div>
+  <h4 class="speakers__name">{{ title }}</h4>
+  <div class="speakers__designation">{{ designation }}</div>
+  <div class="speakers__organization">{{ organization }}</div>
+   <div class="speakers__bio">
+  {% block content %}
+          {% embed "demo:speakers-item"
+          %}
+          {% block content %}
+            {{ bio }}
+          {% endblock %}
+          {% endembed %}
+        {% endblock %}
+  </div>
+</div>

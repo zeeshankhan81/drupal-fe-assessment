@@ -1,0 +1,63 @@
+uuid: 713a7b1b-8540-4e8b-add8-161f7e12b718
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.speaker.field_bio
+    - field.field.paragraph.speaker.field_designation
+    - field.field.paragraph.speaker.field_name
+    - field.field.paragraph.speaker.field_organization
+    - field.field.paragraph.speaker.field_photo
+    - image.style.card_image
+    - paragraphs.paragraphs_type.speaker
+  module:
+    - media
+    - text
+id: paragraph.speaker.default
+targetEntityType: paragraph
+bundle: speaker
+mode: default
+content:
+  field_bio:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_designation:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_organization:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_photo:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: card_image
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

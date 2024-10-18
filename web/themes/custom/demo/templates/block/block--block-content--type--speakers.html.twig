@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ */
+#}
+{{ attach_library('demo/splidejs') }}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+
+{% embed "demo:speakers" with {
+    title: label,
+    } %}
+    {% block content %}
+      {{content.body}}
+    {% endblock %}
+  {% endembed %}

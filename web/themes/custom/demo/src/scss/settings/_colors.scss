@@ -1,0 +1,47 @@
+/**
+*********************
+* Colors
+********************
+**/
+@use "sass:color" as color;
+
+/** Add any additional color supplied in the style guide **/
+
+/* Primary Colors */
+$color--primary-blue: #003FB4 !default;
+$color--primary-liteblue: #EBF5FF !default;
+$color--primary-midblue: #0086FC !default;
+$color--dark-blue: #001234 !default;
+$color--light-blue: #003FB44D !default;
+
+
+/* Secondary Colors */
+$color--secondary--yellow: #FC3 !default;
+
+/* Text colors */
+$color--text--bottle-green: #002B31 !default;
+
+
+/* Grayscale colors */
+$color--black: #090909 !default;
+$color--black-two: #151515 !default;
+$color--black-three: #333 !default;
+$color--light-grey: #FBFAF9 !default;
+$color--grey: #98A2B3 !default;
+$color--dark-blue: #001234 !default;
+$color--dark-grey: #474645 !default;
+$color--white: #fff !default;
+$color--white-one: #F8F9F7 !default;
+$color--white-three: #FCFCFC !default;
+$color--white-four: #F9F9F9 !default;
+$color--white-five: #EBF5FF !default;
+$color--white-six: #F1F1F1 !default;
+$color--footer-tag: rgb(255 255 255 / 10%);
+
+/** Button & Link colors **/
+$color--link: $color--primary-blue;
+$color--link-hover: color.adjust($color--link, $lightness: -5%);
+$transparent: transparent;
+$color--gray: #6B6B6B;
+$color--shadow: #0000001A;
+$color--border-gray: #B7B7B7;

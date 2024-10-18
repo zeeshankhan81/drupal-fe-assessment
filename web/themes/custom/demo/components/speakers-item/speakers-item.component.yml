@@ -1,0 +1,29 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Speakers Item
+status: "stable"
+slots:
+  content:
+    bio: Speaker Bio
+props:
+  type: object
+  properties:
+    name:
+      title: name
+      type: string
+      examples:
+        - Jhon Doe
+    photo:
+      title: Media Image
+      description: Background image for the speaker.
+      type: string
+    designation:
+      title: Designation
+      type: string
+      examples:
+        - Chief Marketing Officer
+    organization:
+      title: Organization
+      type: string
+      examples:
+        - Acquia
+
